@@ -83,7 +83,7 @@ namespace chip {
 namespace DeviceLayer {
 namespace Internal {
 
-constexpr uint16_t kMaxConnectRetries = 4;
+constexpr uint16_t kMaxConnectRetries = 100;
 
 gboolean BluezEndpoint::BluezCharacteristicReadValue(BluezGattCharacteristic1 * aChar, GDBusMethodInvocation * aInvocation,
                                                      GVariant * aOptions)
